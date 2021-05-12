@@ -19,12 +19,16 @@ Para começar, a seguintes ferramentas foram usadas na construção do projeto:
 - [SQL Server Management Studio](https://www.microsoft.com/pt-br/sql-server/)
 
 ###  Como usar
-
 ```bash
-# Clone este repositório
+
+#### Clone este repositório
+
+Escolha e entra na pasta onde queria colocar o repositório.
+Clique com o botão direito na pasta e escolha a opção: "Git Bash Here"
+Digite o seguinte comando no cmd do Git:
 $ git clone <https://github.com/BassaniDev/API_TURISMO.git>
 
-# Configurações para rodar a API
+#### Configurações para rodar a API
 
 - Para o primeiro passo temos que criar um banco de dados em sua maquina
 
@@ -41,7 +45,7 @@ Clique com botão direito nele e escolha a opção "Nova Consulta".
 Cole todo o o texto do arquivo "InsertSqlServerComand.txt", na aba do SLQ Server "Nova Consulta" que você acabou de abrir.
 Clique no botão "Executar" do SQL Server.
 
-# Utilizando a API
+#### Utilizando a API
 
 - Método utilizando o Visual Studio
 
