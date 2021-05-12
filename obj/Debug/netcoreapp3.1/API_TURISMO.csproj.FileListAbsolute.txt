@@ -162,3 +162,8 @@ C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\API_TURISMO.csproj.CopyComplete
 C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\API_TURISMO.dll
 C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\API_TURISMO.pdb
 C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\API_TURISMO.genruntimeconfig.cache
+C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Create.cshtml.g.cs
+C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Delete.cshtml.g.cs
+C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Details.cshtml.g.cs
+C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Edit.cshtml.g.cs
+C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Index.cshtml.g.cs

@@ -62,7 +62,7 @@ namespace API_TURISMO
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=P_Turisticos}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
