@@ -9,40 +9,59 @@
         <h2 class="text-info">Lista de Pontos Turisticos</h2>
     </div>
 
-
     <div class="col-3">
         <a asp-action="Create" class="btn btn-info form-control text-white">Cadastrar Ponto Turístico</a>
     </div>
 
-    <table class="table col-12 border p-3 mt-3">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Descrição)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    <div class="col-1">
+        @using (Html.BeginForm("Index", "P_Turisticos", FormMethod.Get))
+        {
+            @Html.TextBox("Pesquisa")
+            <input type="submit" value="Pesquisar" class="btn btn-outline-success" />
+        }
+    </div>
+    <div class="col-12 border p-3 mt-3">
+        <table class="table col-12 border p-3 mt-3">
+            <thead>
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Descrição)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm">Editar</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Detalhes</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Deletar</a>
-                    </td>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Descrição)
+                    </th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
-</div>
+            </thead>
+            <tbody>
+                @if (Model.Count() > 0)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nome)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descrição)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm">Editar</a> |
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Detalhes</a> |
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Deletar</a>
+                            </td>
+                        </tr>
+                    }
+
+
+
+                }
+                else
+                {
+                    <p>Sem Pontos Turisticos.</p>
+                }
+
+            </tbody>
+        </table>
+        </div>
+    </div>

@@ -20,9 +20,15 @@ namespace API_TURISMO.Controllers
         }
 
         // GET: P_Turisticos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string Pesquisa = "")
         {
-            var applicationDbContext = _context.P_Turistico.Include(p => p.Cidade).Include(p => p.Estado);
+            var applicationDbContext = _context.P_Turistico.Include(p => p.Cidade).Include(p => p.Estado).AsQueryable();
+            if (!string.IsNullOrEmpty(Pesquisa))
+            {
+                applicationDbContext = applicationDbContext.Where(c => ((c.Nome.Contains(Pesquisa)) || (c.Descrição.Contains(Pesquisa)))); 
+            }
+            applicationDbContext = applicationDbContext.OrderBy(c => c.Nome);
+
             return View(await applicationDbContext.ToListAsync());
         }
 
