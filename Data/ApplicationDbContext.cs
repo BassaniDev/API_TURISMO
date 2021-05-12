@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using API_TURISMO.Models;
 
 namespace API_TURISMO.Data
 {
@@ -12,5 +13,6 @@ namespace API_TURISMO.Data
             : base(options)
         {
         }
+        public DbSet<API_TURISMO.Models.P_Turistico> P_Turistico { get; set; }
     }
 }
