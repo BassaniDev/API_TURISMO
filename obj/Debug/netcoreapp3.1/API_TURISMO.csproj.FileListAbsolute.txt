@@ -167,3 +167,6 @@ C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Delete.
 C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Details.cshtml.g.cs
 C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Edit.cshtml.g.cs
 C:\Projetos\API_TURISMO\obj\Debug\netcoreapp3.1\Razor\Views\P_Turisticos\Index.cshtml.g.cs
+C:\Projetos\API_TURISMO\bin\Debug\netcoreapp3.1\web.config
+C:\Projetos\API_TURISMO\bin\Debug\netcoreapp3.1\Community.NServiceBus.WebHost.dll
+C:\Projetos\API_TURISMO\bin\Debug\netcoreapp3.1\NServiceBus.Core.dll

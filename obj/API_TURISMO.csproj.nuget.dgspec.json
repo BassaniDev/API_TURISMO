@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Community.NServiceBus.WebHost": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.13, )"
@@ -51,6 +55,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[3.1.13, )"
+            },
+            "Microsoft.AspNetCore.Server.IIS": {
+              "target": "Package",
+              "version": "[2.2.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
