@@ -33,7 +33,7 @@ $ git clone <https://github.com/BassaniDev/API_TURISMO.git>
 - Para o primeiro passo temos que criar um banco de dados em sua maquina
 
 Abra o Visual Studio, com a solução do projeto que foi clonado.
-Entre no arquivo "appsettings.json", e coloque o nome do seu banco de dados no lugar de "Bassani".
+Entre no arquivo "appsettings.json", e coloque o nome do seu servidor no lugar de "Bassani".
 No VisualStudio, procure por: Ferramentas/Gerenciador de Pacotes do NuGet/Console de Gerenciador de Pacotes
 No console digite: Update-Database
 
